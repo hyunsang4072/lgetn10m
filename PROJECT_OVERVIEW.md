@@ -103,24 +103,24 @@ The interface adopts a **420px max-width viewport container**, calibrated specif
 
 ```
 +-----------------------------------------------------------------------------------+
-| 1. LG Logo Wink & Smile (헤더 좌측 상단 LG 심볼 탭)                                  |
-|   - 트리거: 헤더의 LG 심볼 마크 클릭                                                  |
-|   - 동작: 눈 도트(36, 36)가 0.42초간 찡긋 감겼다 떠지는 Wink 모션 + 로고 팝          |
-|   - 피드백: 햅틱 진동([35, 40]ms) + 플로팅 하트(❤️) 솟아오름                         |
-|   - 토스트: "Life's Good at Clarksville! ❤️" (화면 하단 글래스모피즘 토스트)          |
+| 1. Official LG Logo Pop & Delight (헤더 좌측 상단 공식 LG 로고 탭)                 |
+|   - 트리거: 헤더의 공식 LG Electronics 로고 뱃지(#lgBrandBadge) 클릭/탭           |
+|   - 동작: 공식 로고 이미지가 scale(1.15)로 통통 튀어오르는 로고 팝 키프레임 모션   |
+|   - 피드백: 햅틱 진동([35, 40]ms) + 앙증맞은 플로팅 하트(❤️) 솟아오름              |
+|   - 토스트: "Life's Good at Clarksville! ❤️" (화면 하단 글래스모피즘 토스트)       |
 +-----------------------------------------------------------------------------------+
 | 2. 10 MILLION Jackpot (히어로 타이틀 5회 연타)                                     |
-|   - 트리거: "10 MILLION" 텍스트를 2.5초 내에 5회 연속 탭                               |
-|   - 동작: 0.85초간 숫자가 9,999,990부터 10,000,000까지 고속 카운트업 롤링              |
-|   - 피드백: 잭팟 햅틱 리듬 진동 + 골드 글리치 글로우 셰이크                           |
-|   - 피날레: 10,000,000 달성 순간 화면 전체 대규모 컨페티 폭죽 및 골드 스타 폭발      |
+|   - 트리거: "10 MILLION" 텍스트를 2.5초 내에 5회 연속 탭                            |
+|   - 동작: 0.85초간 숫자가 9,999,990부터 10,000,000까지 고속 카운트업 롤링           |
+|   - 피드백: 잭팟 햅틱 리듬 진동 + 골드 글리치 글로우 셰이크                        |
+|   - 피날레: 10,000,000 달성 순간 화면 전체 대규모 컨페티 폭죽 및 골드 스타 폭발   |
 |   - 토스트: "🎉 Historic Milestone Unlocked: Unit #10,000,000 Produced! Life's Good."|
 +-----------------------------------------------------------------------------------+
 | 3. Washer Spin Cycle Shake (세탁기 1,300 RPM 고속 탈수 모드)                        |
-|   - 트리거: "A New Milestone in Laundry Innovation" 문구 더블탭 또는 0.75초 롱프레스    |
-|   - 동작: 전체 웹페이지 래퍼가 고속 탈수기처럼 1.25초간 좌우/상하로 미세하고 격렬하게 진동 |
-|   - 피드백: 탈수 박자 햅틱 진동([80, 50, 80, 50, 150]ms)                               |
-|   - 토스트: "🌀 Spin Cycle Complete (1,300 RPM)"                                      |
+|   - 트리거: "A New Milestone in Laundry Innovation" 문구 더블탭 또는 0.75초 롱프레스 |
+|   - 동작: 전체 웹페이지 래퍼가 고속 탈수기처럼 1.25초간 좌우/상하로 미세하고 격렬하게 진동|
+|   - 피드백: 탈수 박자 햅틱 진동([80, 50, 80, 50, 150]ms)                            |
+|   - 토스트: "🌀 Spin Cycle Complete (1,300 RPM)"                                   |
 +-----------------------------------------------------------------------------------+
 ```
 
@@ -146,17 +146,23 @@ The interface adopts a **420px max-width viewport container**, calibrated specif
 
 ---
 
-## 6. Official Brand Guideline Compliance (공식 브랜드 규격 준수)
+## 6. Official Brand Guideline & Corporate Asset Compliance (공식 브랜드 가이드라인 및 공식 에셋 준수)
 
-본 웹앱의 좌측 상단 헤더 로고는 **LG 코퍼레이트 브랜드 가이드라인(Basic Logo Elements - 1.2.1 Symbol Mark 25×25 Grid 규격)**을 100% 벡터 수식으로 정밀 구현했습니다:
+본 웹앱의 상단 헤더 브랜드 뱃지는 **LG전자 공식 코퍼레이트 로고(`LG Logo.png`)**를 기반으로 법적 준수(Legal Compliance) 및 브랜드 아이덴티티(Brand Identity)를 완벽히 준수하도록 고도화되었습니다:
 
-- **색상**: Official LG Heritage Red (`#A50034`, Pantone 207C) 원형 디스크.
-- **기본 모듈 ($X = 4$)**: 전체 직경 100 기준 1그리드 단위 $X = 4$.
-- **외곽 원 테두리 여백**: 상하좌우 정확히 $2X$ (8) 간격 유지.
-- **선 굵기**: 정확히 $1X$ (`stroke-width="4"`).
-- **'G' 호 & 수평 바**: 중심 $(50, 50)$, 반지름 38에서 회전 후 $X=64$까지 수평 진입 ($3.5X$ 갭 유지).
-- **'L' 코 & 입**: 코 시작점 $(50, 30)$에서 하단 $Y=68$까지 내려온 후 $X=64$까지 뻗어 상단 'G' 바와 완벽한 수직 일직선 정렬.
-- **눈 도트**: 중심 $(36, 36)$에 직경 $3X$ (반지름 $r=6$) 원형 배치.
+- **공식 기업 로고 에셋 정밀 크롭 및 투명화 (`lg_logo_transparent.png`)**:
+  - LG 공식 심볼 마크(심볼마크 원형)와 "LG Electronics" 공식 영문 로고타입이 결합된 원본 에셋에서 상하좌우 불필요한 여백(Wasted padding)을 1px 단위로 타이트하게 크롭(`275×42`px).
+  - 투명 알파 채널(Anti-aliased Alpha Transparency)로 배경색을 완벽 제거하여 글래스모피즘 알약(Pill) 컨테이너 내부에 여백 없이 자연스럽고 꽉 차게(Full & Natural Fill) 안착.
+- **주변 뱃지 요소와의 완벽한 규격 일치 (Identical Pill Dimensions & Visual Weight Harmony)**:
+  - 헤더의 로고 뱃지(`#lgBrandBadge`)와 우측의 D-Day 카운트다운 뱃지가 완전히 동일한 패딩(`px-3 py-1.5 rounded-full`)과 높이를 공유하도록 통일.
+  - 로고 높이를 `13.5px`로 섬세하게 조정하여 우측의 폰트(`text-[11px]`) 및 인디케이터 펄스 도트(`w-1.5 h-1.5`)와 한 줄에서 완벽하게 균형 잡힌 시각적 무게감(Visual Weight)을 실현.
+- **다크/라이트 테마 적응형 동적 필터 (Adaptive Contrast Filters)**:
+  - **다크 모드 (`dark:`)**: 어두운 유리 표면 위에서 로고 가시성을 극대화하도록 앰비언트 드롭 섀도우(`drop-shadow(0 1px 3px rgba(0,0,0,0.45))`) 및 밝기/대비 최적화(`brightness(1.2) contrast(1.05)`).
+  - **라이트 모드**: 밝은 화이트 글래스 배경에서도 헤리티지 레드의 깊이와 영문 서체의 선명함이 유지되도록 정밀 대비 필터 적용 (`contrast(1.08)`).
+- **에셋 이중 안전장치 (Fallback Resiliency)**:
+  - 이미지 로드 실패 시 대체 공식 이미지(`lg_logo_official.png`)로 자동 폴백되는 `onerror` 핸들러 내장.
+- **공식 규격 및 색상**:
+  - LG Heritage Red (`#A50034`, Pantone 207C) 및 공식 쿨 그레이 타이포그래피 정합성 유지.
 
 ---
 
@@ -209,8 +215,11 @@ docker compose up -d --build
 
 | Version | Date | Changes & Description (변경 내용 및 설명) |
 |:---:|:---:|---|
+| **v1.1.2** | 2026-10-19 | **Header Pill Dimension & Visual Weight Harmonization**: 로고를 감싸는 상단 뱃지 Div의 크기와 패딩(`px-3 py-1.5 rounded-full`)을 우측 D-Day 알약 뱃지와 100% 동일하게 통일. 로고 높이를 `13.5px`로 매칭하여 헤더의 모든 알약 엘리먼트가 완벽한 대칭과 시각적 조화를 이루도록 최적화. |
+| **v1.1.1** | 2026-10-19 | **Official Logo Natural Tight-Fill Refinement**: 상단 알약 컨테이너(`lgBrandBadge`) 내부에서 로고가 웅크려 보이지 않고 시각적으로 자연스럽게 전체 영역을 채우도록(Full Natural Fill) 이미지 상하좌우 불필요 여백 타이트 크롭(`275×42`px) 및 뱃지 높이/패딩 재조정. |
+| **v1.1.0** | 2026-10-19 | **Official LG Corporate Logo Integration**: 법적 브랜드 준수를 위해 제공받은 공식 `LG Logo.png` 에셋을 기반으로 고품질 투명 알파 채널 PNG(`lg_logo_transparent.png`) 생성 및 상단 헤더 뱃지 연동. 다크/라이트 모드별 최적 대비 필터 및 이스터에그 1(로고 팝 모션 & 하트 & 햅틱) 완벽 연동. |
 | **v1.0.0** | 2026-10-17 | Initial comprehensive bilingual project overview, architecture, and interaction guide created. |
 
 ---
-*Document Version: 1.0.0 (Production Release)*  
+*Document Version: 1.1.2 (Production Release)*  
 *Target Event: LG Electronics Clarksville, TN - 10 Million Production Ceremony (Nov 10, 2026)*
